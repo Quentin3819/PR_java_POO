@@ -41,7 +41,7 @@ public class Main {
 	        scanner0.close();
 			Cat chat = new Cat(prenom, nom, race, 0, poids, taille);
 			chat.getAll();
-			System.out.println(chat.getClass());
+			System.out.println(chat.getEspece());
 		}
 		else if (choix == 1) {
 			Scanner scanner1 = new Scanner(System.in);
