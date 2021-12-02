@@ -3,13 +3,13 @@ public class Person extends Creature{
 	protected String address;
 	protected String email;
 	
-	public Person( String firstName, String lastName, String address, String email, int birthDate, double height, double weight){
+	protected Person( String firstName, String lastName, String address, String email, int birthDate, double height, double weight){
 		super(firstName, lastName, birthDate, height, weight);
 		this.address = address;
 		this.email = email;
 	}
 	
-	public void getAll() {
+	protected void getAll() {
 		System.out.println("Prénom : " + super.firstName);
         System.out.println("Nom : " + super.lastName);
         System.out.println("Adresse : " + this.address);
