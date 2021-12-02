@@ -4,13 +4,9 @@ public class Person extends Creature{
 	protected String email;
 	
 	public Person( String firstName, String lastName, String address, String email, int birthDate, double height, double weight){
-		super.firstName= firstName;
-		super.lastName = lastName;
+		super(firstName, lastName, birthDate, height, weight);
 		this.address = address;
 		this.email = email;
-		super.birthDate = birthDate;
-		super.height = height;
-		super.weight = weight;
 	}
 	
 	public void getAll() {
